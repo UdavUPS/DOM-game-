@@ -1,0 +1,17 @@
+.field {
+  background-color: #c5b9b9;
+  width: 505px;
+  height: 505px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: space-evenly;
+}
+
+.field__circle {
+  background-color: #8a8383;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  
+}
