@@ -1,10 +1,16 @@
 let field = document.querySelector(".field");
 let target = document.createElement("img");
+let fieldCircle = document.createElement("div");
 
 target.src = "img/goblin.png";
+fieldCircle.classList.add("field__circle");
+
+for (let i=0; i<16; i++) {
+  field.appendChild(fieldCircle.cloneNode(true));
+}
 
 
-export default function addNewTarget(position) {
+/* export default */ function addNewTarget(position) {
   for (let i = 0; i < 16; i++) {
     if (field.children[i].firstChild) {
       field.children[i].removeChild(field.children[i].firstChild);
